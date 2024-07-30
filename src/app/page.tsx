@@ -16,6 +16,8 @@ export default function Home() {
         <br></br>
         <ProjectsSection/>
         <br></br>
+        <ContactMe/>
+        <br></br>
         
        </div>
     </main>
