@@ -4,14 +4,33 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-const projectsData = [
+// Define an interface for the project data
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  tag: string[];
+  gitUrl: string;
+  previewUrl: string;
+  tech: string;
+}
+
+// Define an interface for the ProjectTag props
+interface ProjectTagProps {
+  onClick: (newTag: string) => void;
+  name: string;
+  isSelected: boolean;
+}
+
+const projectsData: Project[] = [
   {
     id: 1,
     title: "React Portfolio Website",
     description: "My personal website!",
     image: "/images/Website.png",
     tag: ["All", "Web"],
-    gitUrl: "/https://github.com/sshradd/personal-portfolio",
+    gitUrl: "https://github.com/sshradd/personal-portfolio",
     previewUrl: "/",
     tech: "React.js | Next.js | Typescript | CSSTailwind | Vercel",
   },
@@ -24,7 +43,6 @@ const projectsData = [
     gitUrl: "https://github.com/acm-projects/Sage",
     previewUrl: "https://github.com/acm-projects/Sage",
     tech: "React.js | Next.js | Javascript | AWS | Langchain",
-
   },
   {
     id: 3,
@@ -32,20 +50,18 @@ const projectsData = [
     description: "The UTDesign EPICS Team Formation project is a full-stack application utilizing React JS, Next.js, Prisma, and SQLite that aims to streamline the team formation process for the UTDesign staff.",
     image: "/images/EPICS.png",
     tag: ["All", "Web"],
-    gitUrl: "/https://github.com/UTDallasEPICS/Teambuilder",
-    previewUrl: "/https://github.com/UTDallasEPICS/Teambuilder",
+    gitUrl: "https://github.com/UTDallasEPICS/Teambuilder",
+    previewUrl: "https://github.com/UTDallasEPICS/Teambuilder",
     tech: "React | Next.js | Typescript | Primsa | SQLite",
-
   },
-  
 ];
 
-const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
-  const ref = useRef(null);
+const ProjectsSection: React.FC = () => {
+  const [tag, setTag] = useState<string>("All");
+  const ref = useRef<HTMLUListElement>(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag) => {
+  const handleTagChange = (newTag: string) => {
     setTag(newTag);
   };
 
@@ -83,21 +99,19 @@ const ProjectsSection = () => {
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
-            key={index}
+            key={project.id}  // Changed from index to project.id for better key uniqueness
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
             <ProjectCard
-              key={project.id}
               title={project.title}
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
               tech={project.tech}
-
             />
           </motion.li>
         ))}

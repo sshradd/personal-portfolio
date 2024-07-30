@@ -5,15 +5,16 @@ import LinkedinIcon from "../../../public/images/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
-const ContactMe = () => {
+const ContactMe: React.FC = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.target as HTMLFormElement;
     const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value,
     };
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";

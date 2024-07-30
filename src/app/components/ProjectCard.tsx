@@ -2,7 +2,18 @@ import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tech }) => {
+// Define the props interface
+interface ProjectCardProps {
+  imgUrl: string;
+  title: string;
+  description: string;
+  gitUrl: string;
+  previewUrl: string;
+  tech: string;
+}
+
+// Apply the props interface to the component
+const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, gitUrl, previewUrl, tech }) => {
   return (
     <div>
       <div
@@ -27,7 +38,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tech }) =
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
-        <br></br>
+        <br />
         <p className="text-[#ADB7BE] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-300">{tech}</p>
       </div>
     </div>
