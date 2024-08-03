@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/images/github-icon.svg";
 import LinkedinIcon from "../../../public/images/linkedin-icon.svg";
+import Message from "../../../public/images/Message.svg"
 import Link from "next/link";
 import Image from "next/image";
 
@@ -57,6 +58,10 @@ const ContactMe: React.FC = () => {
           </Link>
           <Link href="https://www.linkedin.com/in/shraddha-subash-53936a1a9/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+          <Link href="mailto:shraddhasubashpublic@gmail.com">
+            <Image src={Message} alt="Linkedin Icon" 
+            height={50}/>
           </Link>
         </div>
       </div>

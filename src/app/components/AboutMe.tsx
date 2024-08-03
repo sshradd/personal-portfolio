@@ -31,11 +31,16 @@ const TAB_DATA = [
       <ul className="">
         <li>
           I love to dance and workout. In my free time I love learning and practicing different styles of dance
-          (Bharatanatyam, Bhangra, Jhummar, Hip-Hop, Contemporary, Kutthu, and more).
+          (Bharatanatyam, Bhangra, Jhummar, Hip-Hop, Contemporary, Kuthu, and more).
           I also enjoy creating art and doing photography in my freetime:  
           <Link 
             href='https://www.instagram.com/shraddart/'
             className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-300"> checkout my art page
+          </Link>
+          and 
+          <Link 
+            href='https://www.tiktok.com/@vai.shra'
+            className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-300"> checkout my dance page
           </Link>.
         </li>
       </ul>
@@ -94,7 +99,7 @@ const AboutSection: React.FC = () => {
               active={tab === "Other"}
             >
               {" "}
-              Other{" "}
+              Hobbies{" "}
             </TabButton>
           </div>
           <div className="mt-8">
