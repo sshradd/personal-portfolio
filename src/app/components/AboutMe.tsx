@@ -32,11 +32,10 @@ const TAB_DATA = [
         <li>
           I love to dance and workout. In my free time I love learning and practicing different styles of dance
           (Bharatanatyam, Bhangra, Jhummar, Hip-Hop, Contemporary, Kuthu, and more).
-          I also enjoy creating art and doing photography in my freetime:  
+          I also enjoy creating art and doing photography in my freetime.  
           <Link 
             href='https://www.instagram.com/shraddart/'
-            className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-300"> checkout my art page
-          </Link>
+            className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-300"> checkout my art page </Link>
           and 
           <Link 
             href='https://www.tiktok.com/@vai.shra'
