@@ -67,7 +67,7 @@ const AboutSection: React.FC = () => {
             I am a dedicated Computer Science student at the University of Texas at Dallas, set to graduate in Fall 2025. 
             My academic journey has equipped me with proficiency in languages like Java, C, C++, and Javascript and 
             expertise in frameworks such as React, Node.js, Next.js, and Unity. 
-            Currently, I am developing an immersive AR/VR project at UTD's HeXD Lab that focuses on educational storytelling, 
+            Currently, I am developing an immersive AR/VR project at UTD&apos;s HeXD Lab that focuses on educational storytelling, 
             integrating real-time gesture recognition and audio features. 
             I have also created full-stack applications to streamline team formation processes for UT Design and 
             provide virtual academic advising for students through SAGE. With a strong interest in design, 
