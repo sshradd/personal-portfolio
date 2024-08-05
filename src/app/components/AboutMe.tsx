@@ -64,10 +64,10 @@ const AboutSection: React.FC = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-med">
-            a dedicated Computer Science student at the University of Texas at Dallas, set to graduate in Fall 2025. 
+            I am a dedicated Computer Science student at the University of Texas at Dallas, set to graduate in Fall 2025. 
             My academic journey has equipped me with proficiency in languages like Java, C, C++, and Javascript and 
             expertise in frameworks such as React, Node.js, Next.js, and Unity. 
-            Currently, I am developing an immersive AR/VR project that focuses on educational storytelling, 
+            Currently, I am developing an immersive AR/VR project at UTD's HeXD Lab that focuses on educational storytelling, 
             integrating real-time gesture recognition and audio features. 
             I have also created full-stack applications to streamline team formation processes for UT Design and 
             provide virtual academic advising for students through SAGE. With a strong interest in design, 
