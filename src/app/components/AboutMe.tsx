@@ -30,7 +30,7 @@ const TAB_DATA = [
     content: (
       <ul className="">
         <li>
-          I love to dance and workout. In my free time I love learning and practicing different styles of dance
+          I love to dance. In my free time I love learning and practicing different styles of dance
           (Bharatanatyam, Bhangra, Jhummar, Hip-Hop, Contemporary, Kuthu, and more).
           I also enjoy creating art and doing photography in my freetime.  
           <Link 
@@ -64,7 +64,7 @@ const AboutSection: React.FC = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-med">
-            I am a dedicated Computer Science student at the University of Texas at Dallas, set to graduate in Fall 2025. 
+            I am a Computer Science student at the University of Texas at Dallas, set to graduate in Fall 2025. 
             My academic journey has equipped me with proficiency in languages like Java, C, C++, and Javascript and 
             expertise in frameworks such as React, Node.js, Next.js, and Unity. 
             Currently, I am developing an immersive AR/VR project at UTD&apos;s HeXD Lab that focuses on educational storytelling, 
