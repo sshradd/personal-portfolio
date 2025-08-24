@@ -49,7 +49,7 @@ const Intro = () => {
         </div>
         <div className="col-span-5 ml-7">
           <Image
-            src="/images/headhsot.jpg"
+            src="https://sshradd.github.io/personal-portfolio/images/headshot.jpg"
             width={400}
             height={400}
             alt="headshot"
