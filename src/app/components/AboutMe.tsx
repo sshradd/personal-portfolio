@@ -10,8 +10,8 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Frameworks/Libraries: Node.js | React.js | Express.js | Unity </li>
-        <li>Languages: HTML/CSS, Java, Javascript, Typescript, C, C++, C#</li>
+        <li>Frameworks/Libraries: Node.js , React.js , Express.js , Unity </li>
+        <li>Languages: Python, HTML/CSS, Java, Javascript, Typescript, C, C++, C#, SQL</li>
       </ul>
     ),
   },
@@ -64,19 +64,7 @@ const AboutSection: React.FC = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-med">
-            I am a Computer Science student at the University of Texas at Dallas, set to graduate in Fall 2025. 
-            My academic journey has equipped me with proficiency in languages like Java, C, C++, and Javascript and 
-            expertise in frameworks such as React, Node.js, Next.js, and Unity. 
-            Currently, I am developing an immersive AR/VR project at UTD&apos;s HeXD Lab that focuses on educational storytelling, 
-            integrating real-time gesture recognition and audio features. 
-            I have also created full-stack applications to streamline team formation processes for UT Design and 
-            provide virtual academic advising for students through SAGE. With a strong interest in design, 
-            I enjoy creating user-friendly interfaces and visually appealing virtual environments. 
-            Beyond academics, I actively contribute to the community as the Events Chair for the Society of Asian Scientists and 
-            Engineers and as the Media Chair for Women Mentoring Women in Engineering, 
-            where I drive engagement and foster professional growth. 
-            Additionally, my role as a Project Manager at ACM UTD has allowed me to lead teams and oversee the development of 
-            software applications, further honing my leadership and project management skills
+            Hi, I’m Shraddha Subash! I am a Computer Science student at UT Dallas passionate about creating impactful and intuitive technology. I’ve worked on everything from building CI/CD pipelines and modern web applications during my internships at CBRE and Xforia, to designing immersive AR/VR storytelling experiences as a researcher at UTD’s HeXD Lab. Outside of technical work, I lead teams through ACM at UTD and HackUTD, where I help bring ambitious software projects and large-scale hackathons to life. My interests sit at the intersection of software engineering, product thinking, and user-centered design, and I’m excited to keep exploring how technology can connect people in meaningful ways.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
