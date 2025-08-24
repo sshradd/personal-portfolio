@@ -26,16 +26,6 @@ interface ProjectTagProps {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "My personal website!",
-    image: "/images/Website.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/sshradd/personal-portfolio",
-    previewUrl: "/",
-    tech: "React.js | Next.js | Typescript | CSSTailwind | Vercel",
-  },
-  {
-    id: 2,
     title: "Student Advisor and Guidance Engine (SAGE)",
     description: "Oftentimes, advisors get flooded with questions that have simple answers or problems that are easy to resolve. SAGE is an advisor chatbot that can answer your questions quickly and efficiently, so you don’t have to worry about it. On top of this, SAGE can view your profile to help you make decisions about future classes and even generate personalized degree plans. Take the stress out of the logistics and just ask SAGE for help with your inquiries and classes!",
     image: "/images/SAGE.png",
@@ -45,7 +35,7 @@ const projectsData: Project[] = [
     tech: "React.js | Next.js | Javascript | AWS | Langchain",
   },
   {
-    id: 3,
+    id: 2,
     title: "UTDesign EPICS Team Formation",
     description: "The UTDesign EPICS Team Formation project is a full-stack application utilizing React JS, Next.js, Prisma, and SQLite that aims to streamline the team formation process for the UTDesign staff.",
     image: "/images/EPICS.png",
@@ -53,6 +43,26 @@ const projectsData: Project[] = [
     gitUrl: "https://github.com/UTDallasEPICS/Teambuilder",
     previewUrl: "https://github.com/UTDallasEPICS/Teambuilder",
     tech: "React | Next.js | Typescript | Primsa | SQLite",
+  },
+  {
+    id: 3,
+    title: "Nostalgio",
+    description: "Nostalgio is an app that captures your listening and travel habits to make your travel and music experiences memorable. By linking to your Spotify account, it uses your listening patterns and data on what others have listened to at the same location to predict and recommend music you might enjoy. Nostalgio enhances your daily life and travel experiences by creating a musical map of your journeys, turning ordinary moments into memorable ones with personalized, location-specific music.",
+    image: "/images/Nostalgio.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/acm-projects/Nostalgio",
+    previewUrl: "https://github.com/acm-projects/Nostalgio",
+    tech: "React Native | Spotify API | Google Maps API | AWS Lambda | AWS DynamoDB | AWS Cognito | AWS S3",
+  },
+  {
+    id: 4,
+    title: "Lore",
+    description: "Lore is an interactive and collaborative storytelling game for anyone who enjoys creating imaginative stories with friends. Players can create groups, start stories, and vote on plot points to compete against players. When stuck, players can use the AI driven suggestions to craft their next plot point. Whether you're bored at a family gathering or finding an activity to do with your close friends, Lore fosters creativity and community, making it easy for users to connect and craft memorable stories together.",
+    image: "/images/Lore.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/acm-projects/Lore",
+    previewUrl: "https://github.com/acm-projects/Lore",
+    tech: "React Native | Expo Go | Amazon Bedrock | Socket.io | Node.js | Express | AWS DynamoDB | AWS Cognito",
   },
 ];
 
